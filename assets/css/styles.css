@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+#header {
+    height: 60px;
+    background-color: #00b894;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.4s ease-in-out;
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  height: 100%;
+  color: #fff;
+}
+
+#header svg {
+  height: 100%;
+  margin-right: auto;
+}
+
+#header a {
+  color: #fff;
+}
+
+.header-claro {
+  background-color: #efefef !important;
+}
+
+.header-claro a {
+  color: #00b894 !important;
+}
+
+.header-claro svg path {
+  fill: #00b894 !important;
+}
+
+
+section.apresentacao {
+  margin-top: 60px;
+  background-color: #00b894;
+  color: #fff;
+  height: calc(100vh - 60px);
+  min-height: 500px;
+}
+
+section.apresentacao h1 {
+    margin-top: 150px;
+}
+
+section.apresentacao .pets {
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  transform:
+}
+
+#texto-principal {
+  z-index: 5;
+}
+
+.title h2 {
+    text-align: center;
+}
+
+.title p {
+    text-align: center;
+    color: #555;
+}
+
+.padding-section {
+    padding: 80px 0;
+}
+
+.funcionalidades > div {
+    margin: 50px 0;
+}
+
+.funcionalidade h3 {
+  text-transform: uppercase;
+  color: #00b894;
+}
+
+section.coming-soon h1 {
+  color: #00cec9;
+}
+
+section.time {
+  background-color: #00b894;
+}
+
+.perfil {
+    padding: 5px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+.perfil .foto {
+    border-radius: 10px;
+    height: 140px;
+    width: 100%;
+    background-color: olive;
+}
+
+.perfil .foto img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.perfil footer {
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.perfil:hover {
+    transform: scale(1.1);
+}
+
+#comingsoon-btn {
+  max-width: 120px;
+  margin-left: auto;
+  position: absolute;
+  bottom: 80px;
+  right: 50px;
+}
+
+@media (max-width: 991.98px) {
+  section.apresentacao .pets {
+    opacity: 0.5;
+    z-index: 1;
+  }
+}
