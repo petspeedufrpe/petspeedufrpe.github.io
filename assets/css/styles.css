@@ -1,20 +1,39 @@
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lexend Deca", Helvetica, Arial, sans-serif;
 }
 
 html, body {
     height: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* TIPOGRAFIA */
+
+.padding-section {
+    padding: 80px 0;
+}
+
+.icon {
+    max-width: 25px;
+}
+
+/* HEADER */
+
 #header {
     height: 60px;
+    width: 100%;
+    position: fixed;
     background-color: #00b894;
     color: #fff;
-    position: fixed;
     top: 0;
-    width: 100%;
     z-index: 999;
     transition: all 0.4s ease-in-out;
 }
@@ -22,6 +41,7 @@ html, body {
 #header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 0;
   height: 100%;
   color: #fff;
@@ -29,7 +49,6 @@ html, body {
 
 #header svg {
   height: 100%;
-  margin-right: auto;
 }
 
 #header a {
@@ -48,6 +67,7 @@ html, body {
   fill: #00b894 !important;
 }
 
+/* APRESENTACAO */
 
 section.apresentacao {
   margin-top: 60px;
@@ -62,10 +82,11 @@ section.apresentacao h1 {
 }
 
 section.apresentacao .pets {
-  position: absolute;
-  bottom: -8px;
-  right: 0;
-  transform:
+    max-width: 100%;
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    transform:
 }
 
 #texto-principal {
@@ -81,30 +102,52 @@ section.apresentacao .pets {
     color: #555;
 }
 
-.padding-section {
-    padding: 80px 0;
-}
-
-.funcionalidades > div {
-    margin: 50px 0;
-}
+/* SEÇÃO FUNCIONALIDADES */
 
 .funcionalidade h3 {
   text-transform: uppercase;
   color: #00b894;
 }
 
+.funcionalidades img {
+    max-width: 100%;
+}
+
+/* SEÇÃO COMING SOON */
+
 section.coming-soon h1 {
   color: #00cec9;
 }
+
+#comingsoon-btn {
+    max-width: 120px;
+    margin-left: auto;
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+}
+
+.btn-coming {
+    background-color: #00cec9;
+    color: #fff;
+}
+
+/* SEÇÃO TIME */
 
 section.time {
   background-color: #00b894;
 }
 
+.devs {
+    display: flex;
+    justify-content: center;
+}
+
 .perfil {
     padding: 5px;
-    width: 130px;
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
     border-radius: 10px;
     background-color: #fff;
     transition: all 0.3s ease-in-out;
@@ -114,38 +157,60 @@ section.time {
 
 .perfil .foto {
     border-radius: 10px;
-    height: 140px;
     width: 100%;
     background-color: olive;
 }
 
-.perfil .foto img {
+.perfil img {
   border-radius: 10px;
   width: 100%;
+  max-width: 100%;
+  display: inline-block;
 }
 
 .perfil footer {
-    color: #666;
+    color: #00b894;
     margin-top: 10px;
     text-align: center;
     font-weight: bold;
+}
+
+.perfil footer p {
+    margin: 0
 }
 
 .perfil:hover {
     transform: scale(1.1);
 }
 
-#comingsoon-btn {
-  max-width: 120px;
-  margin-left: auto;
-  position: absolute;
-  bottom: 80px;
-  right: 50px;
+.github-logo {
+    width: 20px;
+    text-align: center;
 }
+
 
 @media (max-width: 991.98px) {
   section.apresentacao .pets {
     opacity: 0.5;
-    z-index: 1;
   }
+
+  section.apresentacao {
+      overflow: hidden;
+  }
+
+  #header .container {
+      padding: 0 15px;
+  }
+}
+
+@media (max-width: 368px) {
+    .devs h5 {
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 768px) {
+    section.apresentacao h1 {
+        margin-top: 50px;
+    }
 }
